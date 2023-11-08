@@ -71,4 +71,3 @@ const BidRequests = () => {
 
 export default BidRequests;
 
-// bid requste 
