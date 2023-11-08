@@ -1,0 +1,35 @@
+
+// import { useLoaderData } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import { useEffect, useState } from 'react';
+import WebDetailsPage from './WebDetailsPage';
+
+const WebDetails = ({category}) => {
+    // const data = useLoaderData()
+    // console.log(data);
+
+    // const{data,isLoading,refetch} = CategoryData();
+    // if (isLoading === true) {
+    //     return isLoading
+    // }
+    const [item, setItem] = useState([]);
+    useEffect(()=>{
+        fetch(`http://localhost:5000/getJobsbycategory/${category}`)
+        .then(res => res.json())
+        .then(data => setItem(data))
+    },[category])
+
+    return (
+        <div className='grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-10 mt-20  p-5 rounded'>
+            {
+                item?.map(singleData=><WebDetailsPage singleData={singleData}  key={singleData._id}></WebDetailsPage>)
+            }
+        </div>
+    );
+};
+
+export default WebDetails;
+WebDetails.propTypes = {
+    category: PropTypes.node,
+    
+}

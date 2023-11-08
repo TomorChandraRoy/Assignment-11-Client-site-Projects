@@ -1,0 +1,50 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.ibb.co/ZHxF9Zp/course1-740x500.jpg",
+      "image1": "",
+      "title": "Computer Management",
+      "lecturer": "Lecturer Admin in TECHNOLOGY ",
+      "rating": 5,
+      "men": 100,
+      "time": "18h 30min",
+      "lessons": "5 Lessons",
+      "des": "Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co/KFcqP46/course3-770x450.jpg",
+      "image1": "",
+      "title": "English For Today",
+      "lecturer": "Lecturer Admin in Language ",
+      "rating": 5,
+      "men": 80,
+      "time": "10h 30min",
+      "lessons": "10 Lessons",
+      "des": "There are tens of thousands of content marketing jobs being advertised on LinkedIn. These roles have never been in more demand. That’s why adding content marketing to your skill set is such a smart career move. In this course, expert Colleen Jones introduces you to the fundamentals. "
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co/Wv2dV8P/course5-770x450.jpg",
+      "image1": "",
+      "title": "Computer Engineering",
+      "lecturer": "Lecturer Admin in TECHNOLOGY ",
+      "rating": 5,
+      "men": 70,
+      "time": "17h 30min",
+      "lessons": "13 Lessons",
+      "des": "There are tens of thousands of content marketing jobs being advertised on LinkedIn. These roles have never been in more demand. That’s why adding content marketing to your skill set is such a smart career move. In this course, expert Colleen Jones introduces you to the fundamentals"
+    },
+    {
+      "id": 4,
+      "image": "https://i.ibb.co/pr7BLj8/course4-770x450.jpg",
+      "image1": "",
+      "title": "Business Management",
+      "lecturer": "Lecturer Admin in Business ",
+      "rating": 5,
+      "men": 120,
+      "time": "21h 30min",
+      "lessons": "15 Lessons",
+      "des": "There are tens of thousands of content marketing jobs being advertised on LinkedIn. These roles have never been in more demand. That’s why adding content marketing to your skill set is such a smart career move. In this course, expert Colleen Jones introduces you to the fundamentals. "
+    }
+  ]
