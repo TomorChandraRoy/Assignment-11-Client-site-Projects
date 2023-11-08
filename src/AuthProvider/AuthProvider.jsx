@@ -67,4 +67,3 @@ AuthProvider.propTypes ={
     children:PropTypes.node
 }
 
-//auth done
