@@ -5,7 +5,7 @@ const BidEmail = () => {
     const {data,isLoading,isFetching,refetch} = useQuery({
         queryKey: ["bids"],
         queryFn: async () => {
-            const jobDataFetch = await fetch('http://localhost:5000/singleData');
+            const jobDataFetch = await fetch('https://server-site-project.vercel.app/singleData');
             const addJob= await jobDataFetch.json();
             return addJob;
         }

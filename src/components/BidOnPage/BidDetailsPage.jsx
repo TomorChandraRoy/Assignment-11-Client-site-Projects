@@ -33,7 +33,7 @@ const BidDetailsPage = () => {
         console.log("gjfkgjkfjkgfjhkgfjkhjfgjhkgfj", BidEmail);
 
         //{??--DataBase Data Load--??}
-        fetch("http://localhost:5000/bid-data", {
+        fetch("https://server-site-project.vercel.app/bid-data", {
             method: "POST",
             headers: {
                 "content-type": "application/json"

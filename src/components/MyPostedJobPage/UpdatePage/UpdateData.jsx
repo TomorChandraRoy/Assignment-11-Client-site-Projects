@@ -35,7 +35,7 @@ const UpdateData = () => {
 
         const updateJob = { email, title, Deadline, description, catogray, miniprice, maxprice }
         // console.log(updateJob);
-        const response = await axios.patch(`http://localhost:5000/updateJob/${_id}`, updateJob)
+        const response = await axios.patch(`https://server-site-project.vercel.app/updateJob/${_id}`, updateJob)
         const data = await response.data;
         console.log(data);
         if(data.modifiedCount>0){

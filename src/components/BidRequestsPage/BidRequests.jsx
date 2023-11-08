@@ -4,7 +4,7 @@ const BidRequests = () => {
     const bidRequest= useLoaderData();
     console.log(bidRequest);
     const handleAccept = ({id}) =>{
-        fetch(`http://localhost:5000/updateStatus/${id}`,{
+        fetch(`https://server-site-project.vercel.app/updateStatus/${id}`,{
             method: "PATCH",
             headers:{
                 "content-type": "application/json"
@@ -16,7 +16,7 @@ const BidRequests = () => {
         .then(data => console.log(data))
     }
     const handleReject = ({id}) =>{
-        fetch(`http://localhost:5000/updateStatus/${id}`,{
+        fetch(`https://server-site-project.vercel.app/updateStatus/${id}`,{
             method: "PATCH",
             headers:{
                 "content-type": "application/json"

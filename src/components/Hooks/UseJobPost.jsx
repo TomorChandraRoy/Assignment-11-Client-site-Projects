@@ -8,7 +8,7 @@ const UseJobPost = () => {
     const {data,isLoading,isFetching,refetch} = useQuery({
         queryKey: [user?.email],
         queryFn: async () => {
-            const jobDataFetch = await fetch(`http://localhost:5000/jonByEmail/?email=${user?.email}`);
+            const jobDataFetch = await fetch(`https://server-site-project.vercel.app/jonByEmail/?email=${user?.email}`);
             const addJob= await jobDataFetch.json();
             return addJob;
         }

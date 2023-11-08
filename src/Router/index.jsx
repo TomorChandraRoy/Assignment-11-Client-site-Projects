@@ -45,29 +45,29 @@ const myRouter = createBrowserRouter([
             {
                 path:"/update/:id",
                 element:<UpdateData></UpdateData>,
-                loader:({params})=>fetch(`http://localhost:5000/singleData/${params.id}`)
+                loader:({params})=>fetch(`https://server-site-project.vercel.app/singleData/${params.id}`)
             },
 
             {
                 path:'/webdetails/:id',
                 element: <BidDetailsPage></BidDetailsPage>,
-                loader: ({params})=>fetch(`http://localhost:5000/singleData/${params.id}`)
+                loader: ({params})=>fetch(`https://server-site-project.vercel.app/singleData/${params.id}`)
             },
 
             {
                 path:"/online-marketing/bidonpage",
                 element:<BidOnPage></BidOnPage>,
-                loader: ()=> fetch('http://localhost:5000/singleData')
+                loader: ()=> fetch('https://server-site-project.vercel.app/singleData')
             },
             {
                 path:"/online-marketing/mybids",
                 element:<PrivecteRoute> <MyBids></MyBids>,</PrivecteRoute>,
-                loader: ()=>fetch('http://localhost:5000/bid-data')
+                loader: ()=>fetch('https://server-site-project.vercel.app/bid-data')
             },
             {
                 path:"/online-marketing/bid-requests/:email",
                 element:<PrivecteRoute><BidRequests></BidRequests></PrivecteRoute>,
-                loader: ({params})=>fetch(`http://localhost:5000/bidrequest/${params.email}`)
+                loader: ({params})=>fetch(`https://server-site-project.vercel.app/bidrequest/${params.email}`)
             }
         ]
     },

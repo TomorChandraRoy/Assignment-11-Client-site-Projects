@@ -4,7 +4,7 @@ const CategoryData = () => {
     const {data,isLoading,isFetching,refetch} = useQuery({
         queryKey: ['categoryes'],
         queryFn: async () => {
-            const jobDataFetch = await fetch('http://localhost:5000/addjobs');
+            const jobDataFetch = await fetch('https://server-site-project.vercel.app/addjobs');
             const addJob= await jobDataFetch.json();
             return addJob;
         }

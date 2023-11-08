@@ -14,7 +14,7 @@ const WebDetails = ({category}) => {
     // }
     const [item, setItem] = useState([]);
     useEffect(()=>{
-        fetch(`http://localhost:5000/getJobsbycategory/${category}`)
+        fetch(`https://server-site-project.vercel.app/getJobsbycategory/${category}`)
         .then(res => res.json())
         .then(data => setItem(data))
     },[category])

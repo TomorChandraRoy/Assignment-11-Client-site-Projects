@@ -5,7 +5,7 @@ const MyBids = () => {
     const myBidData = useLoaderData();
     console.log(myBidData);
    
-    fetch('http://localhost:5000',{
+    fetch('https://server-site-project.vercel.app',{
         method: 'POST',
         headers:{
             "content-type": "appliction/json"

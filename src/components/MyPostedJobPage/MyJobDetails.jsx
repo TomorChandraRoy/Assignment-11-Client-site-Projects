@@ -9,7 +9,7 @@ const MyJobDetails = ({ singleJob, refetch}) => {
     const { _id, title, Deadline, description, catogray, miniprice, maxprice,email } = singleJob;
 
     const handleDelete = () => {
-        axios.delete(`http://localhost:5000/addjobs/${_id}`)
+        axios.delete(`https://server-site-project.vercel.app/addjobs/${_id}`)
             .then(res => {
                 if(res?.data?.deletedCount>0){
                     
