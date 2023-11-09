@@ -156,21 +156,6 @@ const UpdateData = () => {
                             />
                         </label>
                     </div>
-                    {/* <div className="mb-5">
-                    <div className="form-control w-full">
-                        <label className="label">
-                            <span className="label-text"> Photo url</span>
-                        </label>
-                        <label className="input-group">
-                            <input
-                                type="url"
-                                name="url"
-                                placeholder="Enter photo url"
-                                className="input input-bordered w-full"
-                            />
-                        </label>
-                    </div>
-                </div> */}
                     <input type="submit" value="Update Jobs" className="btn btn-block" />
                 </form>
             </div>
