@@ -33,3 +33,4 @@ WebDetails.propTypes = {
     category: PropTypes.node,
     
 }
+//okay

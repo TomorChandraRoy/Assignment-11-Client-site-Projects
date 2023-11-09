@@ -46,11 +46,13 @@ const Navbar = () => {
           </div>
           <div ><img className="w-[200px] h-[50px] " src="https://i.ibb.co/QmRRpDn/logo-removebg-preview.png" alt=""/></div>
         </div>
+
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             {navLinks}
           </ul>
         </div>
+
         <div className="navbar-end gap-5">
           {
               user ?

@@ -33,20 +33,4 @@ const Category = () => {
 export default Category;
 
 
-{/* <h2 className="text-center text-2xl font-bold "> Category </h2> */ }
-{/* <Tabs>
-                <TabList className="text-center ">
-                    <Tab>Web Developent</Tab>
-                    <Tab>Graphics Design</Tab>
-                    <Tab>digital marketing</Tab>
-                </TabList>
-                    <WebDetails>Web Developent</WebDetails>
-                <TabPanel>
-                    <WebDetails>Graphics Design</WebDetails>
-                </TabPanel>
-                <TabPanel>
-                    <WebDetails>digital marketing</WebDetails>
-                </TabPanel>
-            </Tabs> */}
-
 
