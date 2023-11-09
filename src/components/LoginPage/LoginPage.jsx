@@ -29,9 +29,6 @@ const LoginPage = () => {
         .then(result=>{
             console.log(result.user)
             swal("LOGIN SUCCESS !", "", "success");
-            
-         
-
             // Navigate aer por login 
             Navigate(loaction?.state? loaction.state :'/' );
             
@@ -50,6 +47,7 @@ const LoginPage = () => {
         .then (result =>{
             const googleLogIn = result.user
             console.log(googleLogIn);
+            Navigate(loaction?.state? loaction.state :'/' );
         })
         .catch(error =>{
             console.log(error);
