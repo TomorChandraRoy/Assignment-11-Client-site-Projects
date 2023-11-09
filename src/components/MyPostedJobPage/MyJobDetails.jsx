@@ -5,37 +5,38 @@ import PropTypes from 'prop-types';
 import swal from "sweetalert";
 
 
-const MyJobDetails = ({ singleJob, refetch}) => {
-    const { _id, title, Deadline, description, catogray, miniprice, maxprice,email } = singleJob;
+const MyJobDetails = ({ singleJob, refetch }) => {
+    const { _id, title, Deadline, description, catogray, miniprice, maxprice, email } = singleJob;
 
     const handleDelete = () => {
-        axios.delete(`https://server-site-project.vercel.app/addjobs/${_id}`)
-            .then(res => {
-                if(res?.data?.deletedCount>0){
-                    
-                    swal({
-                        title: "Are you sure?",
-                        text: "Once deleted, you will not be able to recover this imaginary file!",
-                        icon: "warning",
-                        buttons: true,
-                        dangerMode: true,
-                      })
-                      .then((willDelete) => {
-                        if (willDelete) {
-                          swal("Poof! Your imaginary file has been deleted!", {
-                            icon: "success",
-                          });
-                        } else {
-                          swal("Your imaginary file is safe!");
+        swal({
+            title: "Are you sure?",
+            text: "Once deleted, you will not be able to recover this imaginary file!",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+        }).then((willDelete) => {
+            if (willDelete) {
+                axios
+                    .delete(`https://server-site-project.vercel.app/addjobs/${_id}`)
+                    .then((res) => {
+                        if (res?.data?.deletedCount > 0) {
+                            swal("Poof! Your imaginary file has been deleted!", {
+                                icon: "success",
+                            });
                         }
-                      });
-                }
-               
-                refetch();
-            });
-        
-    }
-      const navigate =useNavigate()
+                        refetch();
+                    })
+                    .catch((error) => {
+                        console.error("Error deleting the file", error);
+                    });
+            } else {
+                swal("Your imaginary file is safe!");
+            }
+        });
+    };
+
+    const navigate = useNavigate()
 
     return (
         <div>
@@ -44,7 +45,7 @@ const MyJobDetails = ({ singleJob, refetch}) => {
                 data-aos-duration="2000" >
 
                 <div className="w-92 md:h-[430px] bg-green-400 border border-gray-200 rounded-lg shadow-2xl dark:bg-gray-800 dark:border-gray-700 p-5 mb-5">
-                  
+
                     <div className="px-5 ">
                         <a href="#">
                             <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">{title}</h5>
@@ -75,7 +76,7 @@ const MyJobDetails = ({ singleJob, refetch}) => {
                             <span className="font-medium text-gray-900 dark:text-white">Max:${maxprice}</span>
                             <span className=" font-medium text-gray-900 dark:text-white">Min:${miniprice}</span>
 
-                            <button onClick={()=>navigate(`/update/${_id}`)} className=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" >Update</button>
+                            <button onClick={() => navigate(`/update/${_id}`)} className=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" >Update</button>
 
                             <button onClick={handleDelete} className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Delete</button>
 
@@ -90,7 +91,7 @@ const MyJobDetails = ({ singleJob, refetch}) => {
 };
 
 export default MyJobDetails;
-MyJobDetails.propTypes ={
-     refetch:PropTypes.node,
-    singleJob:PropTypes.node
+MyJobDetails.propTypes = {
+    refetch: PropTypes.node,
+    singleJob: PropTypes.node
 }
