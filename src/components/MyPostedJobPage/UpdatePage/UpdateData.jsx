@@ -41,7 +41,7 @@ const UpdateData = () => {
         if(data.modifiedCount>0){
             swal("Thank You!", "You Job Data Update!", "success"); 
         }
-        navigate('/postjob')
+        navigate('/online-marketing/postjob')
     };
     return (
         <div>
@@ -142,7 +142,6 @@ const UpdateData = () => {
                             </label>
                         </div>
                     </div>
-                    {/* form  photo url  row  */}
                     <div className="form-control  md:w-1/2 mb-5 ">
                         <label className="label">
                             <span className="label-text">Maximum price</span>
