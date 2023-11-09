@@ -21,4 +21,3 @@ const Banner = () => {
 
 export default Banner;
 
-//banner done

@@ -19,5 +19,5 @@ const BidOnPage = () => {
 
 export default BidOnPage;
 
-// bid jsx
+
 
