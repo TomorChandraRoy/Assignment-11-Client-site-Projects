@@ -30,4 +30,3 @@ PrivecteRoute.propTypes ={
     children:PropTypes.node
 }
 
-// all okay
