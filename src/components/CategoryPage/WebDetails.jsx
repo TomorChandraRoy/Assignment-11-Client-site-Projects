@@ -20,7 +20,7 @@ const WebDetails = ({category}) => {
     },[category])
 
     return (
-        <div className='grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-10 mt-20  p-5 rounded'>
+        <div className='grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 md:gap-5 gap-10 mt-20  p-5 rounded'>
             {
                 item?.map(singleData=><WebDetailsPage singleData={singleData}  key={singleData._id}></WebDetailsPage>)
             }

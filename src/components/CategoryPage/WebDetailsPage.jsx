@@ -9,7 +9,7 @@ const WebDetailsPage = ({ singleData }) => {
             data-aos-easing="ease-out-cubic"
             data-aos-duration="2000" >
 
-            <div className="w-92 h-[300px] bg-green-400 border border-gray-200 rounded-lg shadow-2xl shadow-blue-500 dark:bg-gray-800 dark:border-gray-700 ">
+            <div className="w-fit  lg:h-[320px] md:h-[400px] h-[360px] bg-green-400 border border-gray-200 rounded-lg shadow-2xl shadow-blue-500 dark:bg-gray-800 dark:border-gray-700 ">
                 <h2 className="text-center font-bold my-4">{title}</h2>
                 <div className="px-5">
 
