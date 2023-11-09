@@ -14,11 +14,11 @@ const MyBids = () => {
     })
 
     return (
-        <div>
+        <div className="mt-10">
             <h2 className="text-center text-2xl font-bold">My Bids Jobs :{}</h2>
             {
               
-                    <div className="overflow-x-auto">
+                    <div className="overflow-x-auto mt-2">
                         <table className="table">
                             {/* head */}
                             <thead>

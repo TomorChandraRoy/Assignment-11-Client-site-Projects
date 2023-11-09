@@ -42,7 +42,6 @@ const BidRequests = () => {
                                     <th>Email</th>
                                     <th>Deadline</th>
                                     <th>Status</th>
-                                    <th>Price</th>
                                    
                                 </tr>
                             </thead>
