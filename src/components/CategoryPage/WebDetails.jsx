@@ -5,13 +5,7 @@ import { useEffect, useState } from 'react';
 import WebDetailsPage from './WebDetailsPage';
 
 const WebDetails = ({category}) => {
-    // const data = useLoaderData()
-    // console.log(data);
 
-    // const{data,isLoading,refetch} = CategoryData();
-    // if (isLoading === true) {
-    //     return isLoading
-    // }
     const [item, setItem] = useState([]);
     useEffect(()=>{
         fetch(`https://server-site-project.vercel.app/getJobsbycategory/${category}`)
@@ -33,4 +27,3 @@ WebDetails.propTypes = {
     category: PropTypes.node,
     
 }
-//okay
