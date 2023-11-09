@@ -32,13 +32,6 @@ const Services = () => {
                 </li>
                 <p className="tracking-widest text-center">Targeting methods determine  <br />where your ads can show and who can see them. You can use more than one targeting method in an ad group.</p>
 
-                {/* <a
-                    className="mt-8 inline-block w-full bg-black py-4 text-sm font-bold uppercase tracking-widest text-white"
-                    href=""
-                >
-                    Get Discount
-                </a> */}
-
                 <p className="mt-8 text-xs font-medium uppercase text-gray-400">
                     Offer valid until 24th March, 2021 *
                 </p>
