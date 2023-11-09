@@ -34,7 +34,6 @@ const BidRequests = () => {
               
                     <div className="overflow-x-auto">
                         <table className="table">
-                            {/* head */}
                             <thead>
                                 <tr>
                                     <th></th>

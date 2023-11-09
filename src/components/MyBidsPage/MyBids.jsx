@@ -47,8 +47,7 @@ const MyBids = () => {
                                 
                             </tbody>
                         </table>
-                    </div>
-                
+                    </div> 
             }
         </div>
     );

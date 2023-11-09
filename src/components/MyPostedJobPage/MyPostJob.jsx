@@ -3,7 +3,6 @@ import UseJobPost from "../Hooks/UseJobPost";
 import MyJobDetails from "./MyJobDetails";
 
 const MyPostJob = () => {
-    // const job = useLoaderData();
 
     // !!--TenStackQuary diye data load -- and hooks page thake Ascha!!
     const { data,  isFetching, refetch, isLoading,  } = UseJobPost();

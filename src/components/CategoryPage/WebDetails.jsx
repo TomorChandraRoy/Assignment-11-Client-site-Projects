@@ -1,5 +1,4 @@
 
-// import { useLoaderData } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
 import WebDetailsPage from './WebDetailsPage';
