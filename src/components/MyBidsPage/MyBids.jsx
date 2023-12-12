@@ -33,7 +33,7 @@ const MyBids = () => {
                             </thead>
                             <tbody>
                            {
-                            myBidData.map((bidData, index) => 
+                            myBidData?.map((bidData, index) => 
                             <tr key={index}>
                                     <th >{index+1}</th>
                                     <td>{bidData?.title}</td>
